@@ -4,20 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <title>Music Dictionary</title>
   </head>
-  <body style="display: flex; flex-direction: column;align-items: center; justify-content: center;">
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    "
+  >
     <h2>Welcome to Music Dictionary</h2>
     <section id="add-section">
-      <form action="" style="display: flex; flex-direction: column;align-items: center; justify-content: center;gap:10px">
+      <form
+        action=""
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        "
+      >
         <input type="text" placeholder="type song name here" id="song-name" />
         <label for="song-name">Song Name</label>
-        <input type="text"  placeholder="type artist name here" id="artist-name"/>
+        <input
+          type="text"
+          placeholder="type artist name here"
+          id="artist-name"
+        />
         <label for="">Artist Name</label>
-        <input type="text" id="categories" placeholder="comma seperated values max 3">
+        <input
+          type="text"
+          id="categories"
+          placeholder="comma seperated values max 3"
+        />
         <label for="categories">Categories</label>
-        <button id="add-song" style="margin-top:10px" type="submit">Submit</button>
+        <button id="add-song" style="margin-top: 10px" type="submit">
+          Submit
+        </button>
+      </form>
+    </section>
+    <section id="edit-section">
+      <form
+      id="edit-form"
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        "
+      >
+        New Song Name<input id="new-song" type="text" /> New Song Artist<input id="new-artist" type="text" />
+        New Category<input type="text" id="new-categories" />
+        Song Id <input type="text" id="song-id">
+        <button type="'submit">Edit now!</button>
       </form>
     </section>
 
